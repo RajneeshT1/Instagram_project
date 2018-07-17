@@ -329,7 +329,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-     public void startStory(View view){
+     public void startstory(View view){
         switch (view.getId()){
             case R.id.profile1:
                 startIntent(0);
