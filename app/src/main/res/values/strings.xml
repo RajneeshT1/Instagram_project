@@ -3,4 +3,6 @@
     <string name="signin">signin</string>
     <string name="signout">signout</string>
     <string name="email">email</string>
+    <string name="post">post</string>
+    <string name="new_post">New Post</string>
 </resources>

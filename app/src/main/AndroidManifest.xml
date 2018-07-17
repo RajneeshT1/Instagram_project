@@ -18,7 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Story"></activity>
+        <activity android:name=".Story" />
+        <activity android:name=".PostStatus" />
+        <activity android:name=".Search" />
+        <activity android:name=".Me"></activity>
     </application>
 
 </manifest>

@@ -1,45 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Search"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="5dp"
-        android:gravity="center_vertical">
+        android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/postStatus"
-            android:layout_margin="8dp"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_border_color_black_24dp" />
-
-        <TextView
-            android:layout_width="0dp"
+            android:id="@+id/img2"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search_black_24dp" />
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="instagram"
-            android:gravity="center_horizontal"
-            android:textSize="30sp"
-
-            android:fontFamily="@font/we"
-            android:textColor="@color/black"/>
-
-        <ImageView
-            android:layout_margin="8dp"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_screen_share_black_24dp"/>
-
-
-
+            android:hint="search" />
     </LinearLayout>
-
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -57,9 +40,9 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="7dp"
-                android:onClick="startstory"
+               
                 android:src="@drawable/splash"
-                app:civ_border_color="@color/blue"
+                app:civ_border_color="@color/black"
                 app:civ_border_width="3dp" />
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -68,11 +51,11 @@
                 android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:onClick="startstory"
+                
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="7dp"
                 android:src="@drawable/raj1"
-                app:civ_border_color="@color/blue"
+                app:civ_border_color="@color/colorAccent"
                 app:civ_border_width="3dp" />
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -82,10 +65,10 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="8dp"
-                android:onClick="startstory"
+               
                 android:layout_marginTop="7dp"
                 android:src="@drawable/star"
-                app:civ_border_color="@color/blue"
+                app:civ_border_color="@color/colorAccent"
                 app:civ_border_width="3dp" />
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -96,9 +79,9 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="7dp"
-                android:onClick="startstory"
+                
                 android:src="@drawable/star"
-                app:civ_border_color="@color/blue"
+                app:civ_border_color="@color/black"
                 app:civ_border_width="3dp" />
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -107,11 +90,11 @@
                 android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:onClick="startstory"
+               
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="7dp"
                 android:src="@drawable/raj1"
-                app:civ_border_color="@color/blue"
+                app:civ_border_color="@color/black"
                 app:civ_border_width="3dp" />
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -120,69 +103,20 @@
                 android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:onClick="startstory"
+                
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="7dp"
                 android:src="@drawable/splash"
-                app:civ_border_color="@color/blue"
+                app:civ_border_color="@color/colorAccent"
                 app:civ_border_width="3dp" />
+
 
 
         </LinearLayout>
     </HorizontalScrollView>
 
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/RecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1">
-
-    </android.support.v7.widget.RecyclerView>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/img1"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="9dp"
-            android:src="@drawable/home" />
-
-        <ImageView
-            android:id="@+id/img2"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="45dp"
-            android:src="@drawable/search" />
-
-        <ImageView
-            android:id="@+id/postbtn"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="45dp"
-            android:onClick="post"
-            android:src="@drawable/plus" />
-
-        <ImageView
-            android:id="@+id/img4"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="45dp"
-            android:src="@drawable/heart" />
-
-        <ImageView
-            android:id="@+id/img5"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="45dp"
-            android:src="@drawable/download" />
-
-    </LinearLayout>
 
 </LinearLayout>

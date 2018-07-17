@@ -42,7 +42,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView profile1,profile2,profile3,profile4,profile5,profile6;
+    ImageView profile1,profile2,profile3,profile4,profile5,profile6,postStatus,img2,img5;
+
+
 
 
 
@@ -80,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference userRef,postRef;
 
     private Button signout;
-    RecyclerView recyclerView;
+    RecyclerView recyclerView,recyclerViewSearch;
+
     PostAdapter adapter;
     ArrayList<PostModel> postlist;
 
@@ -98,12 +101,41 @@ public class MainActivity extends AppCompatActivity {
         profile4 = findViewById(R.id.profile4);
         profile5 = findViewById(R.id.profile5);
         profile6 = findViewById(R.id.profile6);
+        postStatus = findViewById(R.id.postStatus);
+        img2 = findViewById(R.id.img2);
+        img5 = findViewById(R.id.img5);
+
+        //status intent
+        postStatus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,PostStatus.class);
+                startActivity(intent);
+            }
+        });
+        img2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Search.class);
+                startActivity(intent);
+
+            }
+        });
+        img5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Me.class);
+                startActivity(intent);
+
+            }
+        });
 
 
 
 
 
         recyclerView = findViewById(R.id.RecyclerView);
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // adapter set
@@ -357,5 +389,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("position",i);
         startActivity(intent);
     }
+
+
+
+
+
 
 }
