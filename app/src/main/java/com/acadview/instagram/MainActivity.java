@@ -99,13 +99,14 @@ public class MainActivity extends AppCompatActivity {
         profile5 = findViewById(R.id.profile5);
         profile6 = findViewById(R.id.profile6);
 
-        //stort intent
+
 
 
 
         recyclerView = findViewById(R.id.RecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        // adapter set
         adapter = new PostAdapter(this);
         recyclerView.setAdapter(adapter);
         postlist = new ArrayList<>();
@@ -328,6 +329,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+     public void startStory(View view){
+        switch (view.getId()){
+            case R.id.profile1:
+                startIntent(0);
+                break;
+            case R.id.profile2:
+                startIntent(1);
+                break;
+            case R.id.profile3:
+                startIntent(2);
+                break;
+            case R.id.profile4:
+                startIntent(3);
+                break;
+            case R.id.profile5:
+                startIntent(4);
+                break;
+            case R.id.profile6:
+                startIntent(5);
+                break;
+        }
+     }
 
+    private void startIntent(int i) {
+        Intent intent = new Intent(MainActivity.this,Story.class);
+        intent.putExtra("position",i);
+        startActivity(intent);
+    }
 
 }

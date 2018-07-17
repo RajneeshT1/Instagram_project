@@ -37,7 +37,6 @@ dependencies {
     //circkle image
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 
-
     //firebase storage
 
     implementation 'com.google.firebase:firebase-storage:16.0.1'
