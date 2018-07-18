@@ -1,13 +1,13 @@
 package com.acadview.instagram;
 
 public class UserModel {
-    String id,name,email,ImgUrl;
+    String id,name,email,imgUrl;
 
     public UserModel(String id, String name, String email, String imgUrl) {
         this.id = id;
         this.name = name;
         this.email = email;
-        ImgUrl = imgUrl;
+        imgUrl = imgUrl;
     }
 
     public String getId() {
@@ -35,10 +35,10 @@ public class UserModel {
     }
 
     public String getImgUrl() {
-        return ImgUrl;
+        return imgUrl;
     }
 
     public void setImgUrl(String imgUrl) {
-        ImgUrl = imgUrl;
+        this.imgUrl = imgUrl;
     }
 }

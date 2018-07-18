@@ -12,6 +12,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="290dp"
+            android:onClick="signout"
+
+
+            android:text="@string/signout"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/profile6"
             android:layout_width="80dp"
@@ -28,7 +47,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="30dp"
             android:text="posts"
             android:textColor="@color/black"
@@ -44,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="30dp"
             android:text="folowers"
             android:textColor="@color/black"
@@ -60,7 +79,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="30dp"
             android:text="following"
             android:textColor="@color/black"
@@ -74,6 +93,7 @@
             android:textSize="20sp" />
 
 
+
     </LinearLayout>
 
     <LinearLayout
@@ -85,11 +105,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="25dp"
             android:layout_marginLeft="10dp"
-            android:textStyle="bold"
+            android:layout_marginTop="-5dp"
+            android:text="rajneesh_thakur"
             android:textColor="@color/black"
-            android:text="rajneesh_thakur" />
+            android:textSize="25dp"
+            android:textStyle="bold" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

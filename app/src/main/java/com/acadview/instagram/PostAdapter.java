@@ -32,7 +32,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         PostModel model = postList.get(position);
-        holder.userName.setText(model.userName);
+        holder.userName.setText(model.getUserName());
+
         Glide.with(context).load(model.getPostImgurl()).into(holder.postImage);
 
     }
@@ -60,6 +61,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
             userName = itemView.findViewById(R.id.userNameTextView);
             postImage = itemView.findViewById(R.id.image);
+
 
         }
     }
