@@ -67,6 +67,7 @@ public class Me extends AppCompatActivity {
 
                             startsignOut();
                             startActivity(intent);
+                            finish();
 
                         }
 
